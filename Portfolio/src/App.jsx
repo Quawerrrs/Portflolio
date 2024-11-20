@@ -1,17 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import ProjectPage from "./ProjectPage"; // Importer la page de détails
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold ">Accueil</h1>
-      <p className="">
-        Bienvenu sur mon portfolio,
-        <br />
-        ici vous pourrez trouver mes projets.
-      </p>
-    </>
+    <Router>
+      <Routes>
+        {/* Route pour la page d'accueil */}
+        <Route path="/" element={<Home />} />
+
+        {/* Route pour la page de détails du projet */}
+        <Route path="/project/:id" element={<ProjectPage />} />
+      </Routes>
+    </Router>
   );
 }
 

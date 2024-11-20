@@ -1,18 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+.text-blue-300 {
+  text-shadow: 0 0 5px rgba(0, 153, 255, 0.6), 0 0 10px rgba(0, 153, 255, 0.4);
 }
-/* Ajouter un effet de lueur autour de la bordure */
-.navbar-border {
-  box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.8);
+
+.text-blue-400 {
+  text-shadow: 0 0 5px rgba(0, 153, 255, 0.4), 0 0 10px rgba(0, 153, 255, 0.3);
 }
