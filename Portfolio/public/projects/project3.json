@@ -1,0 +1,26 @@
+{
+  "id": 3,
+  "title": "Creation d'un site web et d'une application mobile",
+  "description": "Suite au cahier des charges transmi par StreamIO nous avons mit en place des solution vors les documents",
+  "image": "../assets/img/stream.png",
+  "category": "Formation",
+  "details": {
+    "technologies": "React, Node JS, Flutter, SQL",
+    "objectif": "Mettre en place des solution logiciel pour StreamIO",
+    "date": "Novembre 2023 à Février 2024"
+  },
+  "docs": [
+    {
+      "title": "Demande Clients",
+      "url": "/docs/StreamIO.pdf"
+    },
+    {
+      "title": "Solutions Trouvés",
+      "url": "/docs/solutions.png"
+    },
+    {
+      "title": "Buisness Plan",
+      "url": "/docs/Art_eZana2.pdf"
+    }
+  ]
+}

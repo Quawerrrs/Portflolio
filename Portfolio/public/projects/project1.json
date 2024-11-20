@@ -3,9 +3,9 @@
   "title": "Création d'une entreprise fictive",
   "description": "Suite a la demande de nos formateurs nous avons peu creer de A à Z une entreprise fictive dans le cadre d'un oral, Vous trouverez ici touts les documents et production",
   "image": "../assets/img/Logo.png",
-  "link": "https://lien_du_projet.com",
+  "category": "Formation",
   "details": {
-    "technologies": "React, Tailwind",
+    "technologies": "HTML, CSS, JS",
     "objectif": "Créer une entreprise fictive",
     "date": "Novembre 2023 à Février 2024"
   },
@@ -17,6 +17,10 @@
     {
       "title": "Trello",
       "url": "/docs/trello.png"
+    },
+    {
+      "title": "Buisness Plan",
+      "url": "/docs/Art_eZana2.pdf"
     }
   ]
 }

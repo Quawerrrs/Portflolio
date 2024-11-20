@@ -1,7 +1,26 @@
 {
   "id": 2,
-  "title": "Projet B",
-  "description": "Description du projet B",
-  "image": "url_to_image2.jpg",
-  "link": "https://lien_du_projet2.com"
+  "title": "Creation De Mon Portfolio",
+  "description": "Pour mon epreuve E4 j'ai mit en place et deployer mon Portfolio",
+  "image": "../assets/img/port.png",
+  "category": "Formation",
+  "details": {
+    "technologies": "React, Tailwind",
+    "objectif": "Portfolio pour epreuve E4",
+    "date": "Novembre 2023 à Mai 2025"
+  },
+  "docs": [
+    {
+      "title": "Design",
+      "url": "/docs/e1.png"
+    },
+    {
+      "title": "Trello",
+      "url": "/docs/trello.png"
+    },
+    {
+      "title": "Buisness Plan",
+      "url": "/docs/Art_eZana2.pdf"
+    }
+  ]
 }
