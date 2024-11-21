@@ -42,7 +42,7 @@ const Navbar = () => {
               href="/contact"
               className="hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-105 text-shadow-bright"
             >
-              Contact
+              Tableau E4
             </a>
           </li>
         </ul>
