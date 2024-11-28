@@ -1,24 +1,26 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
-import { AnimatePresence } from "framer-motion"; // Import AnimatePresence
+import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import ProjectPage from "./ProjectPage";
+import ExcelViewer from "./ExcelViewer";
+import Footer from "./Footer"; // Importer le Footer
 
 function App() {
-  const location = useLocation();
-
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
+    <div className="min-h-screen flex flex-col">
+      {/* Routes */}
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/:id" element={<ProjectPage />} />
+        <Route
+          path="/excel"
+          element={<ExcelViewer filePath="/assets/docs/E4.xlsx" />}
+        />
       </Routes>
-    </AnimatePresence>
+
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 }
 
