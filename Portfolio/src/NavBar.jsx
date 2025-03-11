@@ -24,6 +24,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/veille"
+              className="hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-105 text-shadow-bright"
+            >
+              Veille Informationnelle
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/excel"
               className="hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-105 text-shadow-bright"
             >
