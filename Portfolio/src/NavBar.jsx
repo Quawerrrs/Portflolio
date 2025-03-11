@@ -27,7 +27,14 @@ const Navbar = () => {
               to="/veille"
               className="hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-105 text-shadow-bright"
             >
-              Veille Informationnelle
+              Veille Flutter
+            </Link>
+          </li> <li>
+            <Link
+              to="/ia"
+              className="hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-105 text-shadow-bright"
+            >
+              Veille IA
             </Link>
           </li>
           <li>

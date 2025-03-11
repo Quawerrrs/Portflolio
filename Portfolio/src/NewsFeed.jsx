@@ -2,35 +2,37 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const NewsFeed = () => {
-  const [articles, setArticles] = useState([]);
+  const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+  // Récupérer des projets GitHub populaires
   useEffect(() => {
-    const fetchNews = async () => {
+    const fetchGitHubProjects = async () => {
       try {
-        const response = await axios.get('https://newsapi.org/v2/top-headlines', {
+        const response = await axios.get('https://api.github.com/search/repositories', {
           params: {
-            q: 'PhP',
-            apiKey: 'e469cb3939414fee85c5a55f2f8ffcc9',
+            q: 'flutter',  // Utiliser un mot-clé ou un langage comme 'flutter'
+            sort: 'stars',  // Trier par nombre d'étoiles
+            order: 'desc',  // Trier dans l'ordre décroissant
           },
         });
-        console.log(response.data); // Ajouter cette ligne pour voir la réponse dans la console
-        setArticles(response.data.articles);
+        console.log(response.data.items);  // Afficher les résultats dans la console
+        setProjects(response.data.items);  // Définir les projets récupérés
       } catch (error) {
-        console.error("Erreur API : ", error); // Log des erreurs API
-        setError('Erreur lors de la récupération des articles');
+        console.error('Erreur API GitHub : ', error);
+        setError('Erreur lors de la récupération des projets GitHub');
       } finally {
         setLoading(false);
       }
     };
-  
-    fetchNews();
+
+    fetchGitHubProjects();
   }, []);
-  
+
   // Affichage pendant le chargement
   if (loading) {
-    return <div className="text-center text-lg font-semibold">Chargement des actualités...</div>;
+    return <div className="text-center text-lg font-semibold">Chargement des projets...</div>;
   }
 
   // Affichage en cas d'erreur
@@ -38,28 +40,28 @@ const NewsFeed = () => {
     return <div className="text-center text-red-500">{error}</div>;
   }
 
-  // Affichage des articles récupérés
+  // Affichage des projets GitHub récupérés
   return (
     <div className="container mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold text-center mb-6">Veille Informationnelle</h2>
+      <h2 className="text-3xl font-bold text-center mb-6">Projets GitHub Populaires</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {articles.map((article, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        {projects.map((project) => (
+          <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <img
-              src={article.urlToImage || 'https://via.placeholder.com/150'}
-              alt={article.title}
+              src={project.owner.avatar_url || 'https://via.placeholder.com/150'}
+              alt={project.name}
               className="w-full h-56 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-3">{article.title}</h3>
-              <p className="text-gray-700 mb-4">{article.description || 'Pas de description disponible'}</p>
+              <h3 className="text-xl font-semibold mb-3">{project.name}</h3>
+              <p className="text-gray-700 mb-4">{project.description || 'Pas de description disponible'}</p>
               <a
-                href={article.url}
+                href={project.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 font-semibold"
               >
-                Lire l'article
+                Voir sur GitHub
               </a>
             </div>
           </div>
