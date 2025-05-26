@@ -5,7 +5,8 @@ import "./index.css";
 import Navbar from "./NavBar.jsx"; // Importation de la barre de navigation
 import Home from "./Home.jsx"; // Page d'accueil
 import NewsFeed from "./NewsFeed.jsx"; // Page de veille
-import IAArticles from "./IAArticles.jsx"
+import IAArticles from "./IAArticles.jsx";
+import ProjectPage from "./ProjectPage.jsx"; // Page de projet
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,7 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} /> {/* Page d'accueil */}
         <Route path="/veille" element={<NewsFeed />} /> {/* Page de veille informationnelle */}
         <Route path="/ia" element={<IAArticles />} /> {/* Page de veille informationnelle */}
-        
+        <Route path="/project/:id" element={<ProjectPage />} /> {/* ← Route nécessaire */}
       </Routes>
     </Router>
   </StrictMode>

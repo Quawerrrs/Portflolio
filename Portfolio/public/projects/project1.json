@@ -1,12 +1,12 @@
 {
   "id": 1,
   "title": "Création d'une entreprise fictive",
-  "description": "Suite a la demande de nos formateurs nous avons peu creer de A à Z une entreprise fictive dans le cadre d'un oral, Vous trouverez ici touts les documents et production",
+  "description": "Suite a la demande de nos formateurs nous avons pu créer de A à Z une entreprise fictive dans le cadre d'un oral, Vous trouverez ici touts les documents et production",
   "image": "../assets/img/Logo.png",
   "category": "Formation",
   "details": {
     "technologies": "HTML, CSS, JS",
-    "objectif": "Créer une entreprise fictive",
+    "objectif": "Créer une entreprise fictive de 0",
     "date": "Novembre 2023 à Février 2024"
   },
   "docs": [

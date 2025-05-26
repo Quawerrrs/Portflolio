@@ -37,14 +37,7 @@ const Navbar = () => {
               Veille IA
             </Link>
           </li>
-          <li>
-            <Link
-              to="/excel"
-              className="hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-105 text-shadow-bright"
-            >
-              Tableau E4
-            </Link>
-          </li>
+          
         </ul>
       </div>
     </nav>

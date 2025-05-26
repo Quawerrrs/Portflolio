@@ -6,6 +6,8 @@ const projectFiles = [
   "/projects/project1.json",
   "/projects/project2.json",
   "/projects/project3.json",
+  "/projects/project4.json",
+  "/projects/project5.json",
 ];
 
 function Home() {

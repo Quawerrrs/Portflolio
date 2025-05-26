@@ -3,9 +3,11 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"; // Importer Framer Motion
 
 const projectFiles = [
-  "/projects/project1.json",
-  "/projects/project2.json",
-  "/projects/project3.json",
+  "../projects/project1.json",
+  "../projects/project2.json",
+  "../projects/project3.json",
+  "../projects/project4.json",
+  "../projects/project5.json",
 ]; // Liste des fichiers JSON
 
 function ProjectPage() {

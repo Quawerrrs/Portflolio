@@ -1,0 +1,14 @@
+{
+  "id": 5,
+  "title": "Gestion et résoltion de tickets via GitLab",
+  "description": "Gestion et résoltion de tickets pour l'application de l'Entreprise",
+  "image": "../assets/img/R.png",
+  "category": "Entreprise",
+  "details": {
+    "objectif": "Gerer les nouvelles fonctionnalités et les bugs de l'application",
+    "technologies": "GitLab,"
+  },
+  "docs": [
+   
+  ]
+}

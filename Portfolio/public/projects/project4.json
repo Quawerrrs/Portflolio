@@ -1,13 +1,13 @@
 {
-  "id": 3,
-  "title": "Creation d'un site web pour StreamIO",
+  "id": 4,
+  "title": "Creation  d'une application mobile pour StreamIO",
   "description": "Suite au cahier des charges transmi par StreamIO nous avons mit en place des solution voirs les documents",
   "image": "../assets/img/stream.png",
   "category": "Formation",
   "details": {
-    "technologies": "React, Node JS, SQL",
+    "technologies": "Node JS, Flutter, SQL",
     "objectif": "Mettre en place des solution logiciel pour StreamIO",
-    "date": "Novembre 2024 à Février 2025"
+    "date": "Février 2025 à Avril 2025"
   },
   "docs": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "title": "Cahier des Charges",
-      "url": "/docs/Cahier des charge web.pdf"
+      "url": "/docs/Cahier des charges app.pdf"
     },
     {
       "title": "Solutions Trouvés",
@@ -24,11 +24,11 @@
     },
     {
       "title": "Documentation Technique",
-      "url": "/docs/DocTech.pdf"
+      "url": "/docs/DOC TECH APP.pdf"
     },
     {
       "title": "Documentation Utilisateur",
-      "url": "/docs/DocUtilisateur.pdf"
+      "url": "/docs/doc uti app.pdf"
     },
     {
       "title": "Documentation du déployment",

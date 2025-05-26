@@ -43,7 +43,7 @@ const NewsFeed = () => {
   // Affichage des projets GitHub récupérés
   return (
     <div className="container mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold text-center mb-6">Projets GitHub Populaires</h2>
+      <h2 className="text-3xl font-bold text-center mb-6">Projets Flutter</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
